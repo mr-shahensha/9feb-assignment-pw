@@ -1,0 +1,67 @@
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;   
+}
+.body {
+  height: 80vh;
+  background-color: aquamarine;
+  border-radius: 30px;
+  margin: 40px;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .laptop-large,.laptop,.tablet,.mobile {
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+
+  @media screen and (max-width: 1440px) {
+    .body {
+      background-color: green;
+    }
+  
+    .laptop-large {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .body {
+      background-color: darkgoldenrod;
+    }
+
+    .laptop {
+      display: block;
+    }
+    .laptop-large {
+        display: none;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    .body {
+      background-color: aqua;
+    }
+
+    .tablet {
+      display: block;
+    }
+    .laptop {
+        display: none;
+      }
+  }
+  @media screen and (max-width: 425px) {
+    .body {
+      background-color: crimson;
+    }
+
+    .mobile {
+      display: block;
+    }
+    .tablet {
+        display: none;
+      }
+  }
